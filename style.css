@@ -1,0 +1,269 @@
+/* =========================================================
+   ROOT VARIABLES (MUDAH GANTI TEMA)
+   ========================================================= */
+:root {
+  /* Day Mode */
+  --bg-main: #fffafc;
+  --bg-section: #ffffff;
+  --bg-soft: #fbeff5;
+
+  --text-main: #2b2b2b;
+  --text-soft: #6b6b6b;
+
+  --accent-primary: #f3b6c4; /* pink pastel */
+  --accent-secondary: #d6c4f2; /* ungu lembut */
+  --accent-cream: #f6efe8;
+
+  --border-soft: rgba(0, 0, 0, 0.08);
+}
+
+/* Night Mode */
+body.night {
+  --bg-main: #0f0f14;
+  --bg-section: #15151d;
+  --bg-soft: #1d1d28;
+
+  --text-main: #f1f1f1;
+  --text-soft: #b8b8b8;
+
+  --accent-primary: #d88fa4;
+  --accent-secondary: #a18bd8;
+  --accent-cream: #2a2a34;
+
+  --border-soft: rgba(255, 255, 255, 0.08);
+}
+
+/* =========================================================
+   RESET & BASE
+   ========================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* =========================================================
+   PASSWORD PAGE
+   ========================================================= */
+#password-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    160deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+}
+
+.password-wrapper {
+  background: var(--bg-section);
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: 0.5rem;
+}
+
+.password-wrapper button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  width: 100%;
+  background: var(--accent-primary);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* =========================================================
+   GENERAL SECTION STYLE
+   ========================================================= */
+section {
+  padding: 3rem 1.25rem;
+}
+
+section header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* =========================================================
+   LANDING
+   ========================================================= */
+#landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-soft);
+  text-align: center;
+}
+
+.landing-content h1 {
+  font-size: 2.4rem;
+}
+
+.landing-content p {
+  margin-top: 0.75rem;
+  color: var(--text-soft);
+}
+
+/* =========================================================
+   OUR STORY
+   ========================================================= */
+#our-story article {
+  max-width: 720px;
+  margin: auto;
+  font-size: 1rem;
+  color: var(--text-soft);
+}
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+#timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* =========================================================
+   PHOTO & VIDEO GALLERY (GRID)
+   ========================================================= */
+#photo-grid,
+#video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.75rem;
+}
+
+/* Item media (foto / video thumbnail) */
+.media-item {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--accent-cream);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* =========================================================
+   VIDEO PLAYER
+   ========================================================= */
+#main-video-player {
+  width: 100%;
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+  display: block;
+  border-radius: 0.75rem;
+}
+
+/* =========================================================
+   MUSIC PLAYLIST
+   ========================================================= */
+#music-playlist {
+  text-align: center;
+}
+
+#main-audio-player {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+#music-list {
+  list-style: none;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+#music-list li {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-soft);
+  cursor: pointer;
+}
+
+/* =========================================================
+   LOVE LETTER
+   ========================================================= */
+#letter-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  background: var(--bg-soft);
+  border-radius: 1rem;
+}
+
+/* =========================================================
+   CLOSING
+   ========================================================= */
+#closing {
+  background: linear-gradient(
+    160deg,
+    var(--accent-secondary),
+    var(--accent-primary)
+  );
+  color: white;
+  text-align: center;
+}
+
+.closing-content h2 {
+  font-size: 2rem;
+}
+
+/* =========================================================
+   ANIMATION (RINGAN & HALUS)
+   ========================================================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================================
+   RESPONSIVE (DESKTOP)
+   ========================================================= */
+@media (min-width: 768px) {
+  section {
+    padding: 4rem 2rem;
+  }
+
+  .landing-content h1 {
+    font-size: 3rem;
+  }
+}
