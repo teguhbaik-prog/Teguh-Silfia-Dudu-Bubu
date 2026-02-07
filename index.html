@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kenangan Kita</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ================= PASSWORD PAGE ================= -->
+    <section id="password-page" aria-label="Password Page">
+        <div class="password-wrapper">
+            <h1>💗 Our Private Memories</h1>
+            <p>Masukkan password untuk membuka kenangan kita</p>
+
+            <input 
+                type="password" 
+                id="password-input" 
+                placeholder="Password..."
+                aria-label="Password"
+            />
+
+            <button id="password-submit">Masuk</button>
+            <p id="password-error"></p>
+        </div>
+    </section>
+    <!-- ================================================= -->
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main id="main-content" hidden>
+
+        <!-- ========== LANDING SECTION ========== -->
+        <section id="landing" aria-label="Landing Romantis">
+            <div class="landing-content">
+                <h1>Our Love Story</h1>
+                <p>Sebuah perjalanan yang akan selalu kita kenang</p>
+            </div>
+        </section>
+        <!-- ==================================== -->
+
+
+        <!-- ========== OUR STORY ========== -->
+        <section id="our-story" aria-label="Our Story">
+            <header>
+                <h2>Our Story</h2>
+            </header>
+
+            <article>
+                <p id="story-text">
+                    <!-- Diisi / dikembangkan via JavaScript -->
+                </p>
+            </article>
+        </section>
+        <!-- ================================= -->
+
+
+        <!-- ========== TIMELINE ========== -->
+        <section id="timeline" aria-label="Timeline Kenangan">
+            <header>
+                <h2>Timeline</h2>
+            </header>
+
+            <!-- Timeline items akan dirender via JS -->
+            <div id="timeline-container"></div>
+        </section>
+        <!-- =============================== -->
+
+
+        <!-- ========== PHOTO GALLERY ========== -->
+        <section id="photo-gallery" aria-label="Gallery Foto">
+            <header>
+                <h2>Photo Gallery</h2>
+            </header>
+
+            <!-- Grid foto dinamis dari JS -->
+            <div id="photo-grid"></div>
+        </section>
+        <!-- =================================== -->
+
+
+        <!-- ========== VIDEO GALLERY ========== -->
+        <section id="video-gallery" aria-label="Gallery Video">
+            <header>
+                <h2>Video Gallery</h2>
+            </header>
+
+            <!-- Video thumbnails / list via JS -->
+            <div id="video-list"></div>
+
+            <!-- 1 video player utama -->
+            <video id="main-video-player" controls></video>
+        </section>
+        <!-- =================================== -->
+
+
+        <!-- ========== MUSIC PLAYLIST ========== -->
+        <section id="music-playlist" aria-label="Music Playlist">
+            <header>
+                <h2>Our Playlist</h2>
+            </header>
+
+            <!-- 1 audio player utama -->
+            <audio id="main-audio-player" controls></audio>
+
+            <!-- List lagu via JS -->
+            <ul id="music-list"></ul>
+        </section>
+        <!-- =================================== -->
+
+
+        <!-- ========== LOVE LETTER ========== -->
+        <section id="love-letter" aria-label="Surat Cinta">
+            <header>
+                <h2>Love Letter</h2>
+            </header>
+
+            <div id="letter-container">
+                <!-- Surat interaktif via JS -->
+            </div>
+        </section>
+        <!-- ================================= -->
+
+
+        <!-- ========== CLOSING ========== -->
+        <section id="closing" aria-label="Penutup">
+            <div class="closing-content">
+                <h2>Forever With You</h2>
+                <p>Terima kasih sudah menjadi bagian terindah dalam hidupku</p>
+            </div>
+        </section>
+        <!-- =============================== -->
+
+    </main>
+    <!-- ================================================ -->
+
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
